@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+
+
+/* TABLET */
+@media screen and (min-width:768px) and (max-width:992px){
+  body{
+    background-image: url(../imagens/back-tablet.jpg);
+  }
+
+  #phone{display:none;}
+  #pc{display: none;}
+  #print{display: none;}
+  #tablet{display: block;}
+  #tv{display: none;}
+
+}
+
+/* PC */
+@media screen and (min-width:992px) and (max-width:1200px){
+  body{
+    background-image: url(../imagens/back-pc.jpg);
+  }
+
+  #phone{display:none;}
+  #pc{display: block;}
+  #print{display: none;}
+  #tablet{display: none;}
+  #tv{display: none;}
+}
+
+/* TV - Telas Grandes */
+@media screen and (min-width:1200px){
+  body{
+    background-image: url(../imagens/back-tv.jpg);
+  }
+
+  #phone{display:none;}
+  #pc{display: none;}
+  #print{display: none;}
+  #tablet{display: none;}
+  #tv{display: block;}
+}
+
+/* IMPRESSORA */
+@media print {
+
+  main h1 {
+    color:black;
+  }
+
+  main {
+    border: 2px solid black;
+  }
+  
+  #phone{display:none;}
+  #pc{display: none;}
+  #print{display: block;}
+  #tablet{display: none;}
+  #tv{display: none;}
+} 
