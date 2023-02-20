@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+  font-weight: bolder;
+  font-style: italic;
+}
+
+menu {
+  display: none;
+}
+
+main {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+article::after {
+  content: "Este artigo foi impresso por você";
+}
